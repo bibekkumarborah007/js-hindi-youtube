@@ -16,4 +16,12 @@ accountCity = "Bengaluru"
 
 console.log(accountID);
 
+//tabular format
 console.table([accountID, accountEmail, accountPassword, accountCity]);
+
+// Prefer to use var 
+// beacuse of isssue in block scope and functional scope
+
+
+
+//5.
