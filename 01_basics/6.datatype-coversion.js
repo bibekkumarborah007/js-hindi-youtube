@@ -1,10 +1,11 @@
 //6.datatype conversion
 
 let score = "33"
-// console.log(typeof score);
+// console.log(typeof score); //string
 
+//explicit typecasting
 let valueInNumber = Number (score)
-// console.log(typeof valueInNumber);
+// console.log(typeof valueInNumber); //number
 
 //problem in coversion due to explicit
 
@@ -14,7 +15,7 @@ let valueInNumber = Number (score)
 
 let isLoggedIn = 1
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);//true
 
 // 1=> true; 0 => fasle
 // "" => false
@@ -23,7 +24,5 @@ console.log(booleanIsLoggedIn);
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
-
-
+console.log(stringNumber);//33
+console.log(typeof stringNumber);//string
