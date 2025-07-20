@@ -1,1 +1,4 @@
-Math.random()*10
+handleObject({
+    username: "raj",
+    price: 299
+})

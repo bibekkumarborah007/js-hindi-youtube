@@ -15,16 +15,20 @@ console.log(myCreatedDate.toDateString()); //Mon Jan 23 2023
 
 let myTimeStamp = Date.now()
 
-// console.log(myTimeStamp); //1751469554180
+// console.log(myTimeStamp); //1751469554180 //latest time in ms
 // console.log(myCreatedDate.getTime()); //since date object we can get type methods
-// console.log(Date.now()/1000);//wrong //1751469638.809
-// console.log(Math.floor(Date.now()/1000)); //1751469638
+
+
+
+//coversion from ms to s with floor to get single digit value
+// console.log(Date.now()/1000);//wrong //1751469638.809 ms to s in decimal
+// console.log(Math.floor(Date.now()/1000)); //1751469638 in ms to s
 
 
 let newDate = new Date()
 console.log(newDate);
-console.log(newDate.getMonth() + 1); //since array
-console.log(newDate.getDate());
+console.log(newDate.getMonth() + 1); //since array index
+console.log(newDate.getDate());//19
 
 // `${newDate.getDay()} and the time`
 

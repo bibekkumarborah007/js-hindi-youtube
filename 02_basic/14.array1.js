@@ -39,12 +39,19 @@ const newArr = myArr.join()
 //slice and splice [0, 1, 2, 3, 4, 5] 
 //replace.they return a section of array``
 
-console.log("A", myArr); //A [ 0, 1, 2, 3, 4, 5 ]
 
+//nomral array
+console.log("A: Array", myArr); //A [ 0, 1, 2, 3, 4, 5 ]
+
+
+
+//slice((): return a section of array with n-1 index
 const myn1 = myArr.slice(1 ,3)
 console.log("B", myn1); //[ 1, 2 ] /means it excludes the last index
-// console.log("B", myArr); //[ 1, 2 ] /means it excludes the last index
+console.log("BA", myArr); //[ 0, 1, 2, 3, 4, 5 ] /means it excludes the last index
 
+
+//slice(): return as section of array with n index along with -ve index applicable to reverse indexing
 const myn2 = myArr.splice(1 ,3)
-console.log(myn2); //[ 1, 2, 3 ] means it includes the last index
-console.log("C ", myArr);
+console.log("C ", myn2); //[ 1, 2, 3 ] means it includes the last index
+console.log("CA",myArr); //[ 0, 4, 5 ]

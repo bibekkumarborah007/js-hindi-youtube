@@ -11,7 +11,10 @@ const course = {
 //normal way to access . or []
 course.courseInstructor
 
-//anotherway to use for large no. of access
+//anotherway to use for large no. of times to access 
+// syntax: const {object's key} = object name 
+// c.log(object's key)
+//also: const {object's key : newName} = object name 
 const {courseInstructor: instructor} = course //:abcd is what we called de structure of object
 // console.log(courseInstructor);
 console.log(instructor); //hitesh

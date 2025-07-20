@@ -19,5 +19,6 @@ console.log(undefined == 0);//false
 console.log(undefined >= 0);//false
 console.log(undefined >= 0);//false
 
-// === strictly equal to
-console.log("2" === 2);
+// === strictly equal to: checks value with datatype and unline conersion of equal to
+console.log("2" == 2);//conversion
+console.log("2" === 2);//no conversion

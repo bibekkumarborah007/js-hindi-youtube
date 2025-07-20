@@ -33,6 +33,7 @@ const JsUser = { //key value pairs: keys: string
 // console.log(JsUser.email);
 // console.log(JsUser["email"]); //also with [""] instead of . email is not defined if [] without ""
 // console.log(JsUser["full name"]);
+
 // // console.log(JsUser.mySym); //myKey1 but typeof String but need string
 // console.log(JsUser[mySym]); //myKey1 ,typeof Symbol but shows string
 // console.log(typeof JsUser[mySym]); //still string but prints to get [Symbol(key1)]: 'myKey1'
@@ -44,17 +45,17 @@ JsUser.email = "bkb@gmail.com"
 //way to freeze or lock the object
 // Object.freeze(JsUser)
 JsUser.email = "bkb@hotmail.com"
-//print after freeze
+//printing after freeze but no change due to Object.freeze()
 // console.log(JsUser);
 
 
 //adding functions in objects just like variables
 
 JsUser.greeting = function(){
-    console.log("Hello JsUser");
+    // console.log("Hello JsUser");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JsUser, ${this.name}`);
+    // console.log(`Hello JsUser, ${this.name}`);
 }
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+// console.log(JsUser.greeting());
+// console.log(JsUser.greetingTwo());
