@@ -13,14 +13,14 @@ const user = {
 // user.username = "Bibek Kumar Borah"
 // user.welcomeMessage()
 
-// console.log(this);//{} object and in browser give global object is window object
+// console.log(this);                    //{} empty object in node env    //in browser give global object: window object
 
 
 //-----------arrow fnc()--------------
 
 // function chai(){
 //     let username = "bkb"
-//     console.log(this.username);//undefined only in objects
+//     console.log(this.username);                     //undefined this works only in objects
     
 // }
 // chai()

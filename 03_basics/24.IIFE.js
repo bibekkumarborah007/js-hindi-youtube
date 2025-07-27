@@ -24,3 +24,7 @@
 
 //when two IFFE is used the function is invoked but doesnt know the context where to end so we need to close the first function with " ; " to run the next IIFE
 
+//why use IIFE: to reduce the population created by global scope var declaration we use IIFE with () inside fnc and ( ) after fnc and in order to use two IIFE we have to terminate the first IIFE fnc with ";" to run the next IIFE.
+
+//What is named IIFE: A named function is called named IIFE and we have already doen the eg along with an arrow function with parameters
+

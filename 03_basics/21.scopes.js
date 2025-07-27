@@ -56,13 +56,21 @@ if (true) {
 // console.log(username);
 
 //------------------interesting---------------------
+
+//type1
 console.log(addOne(5))//6
 function addOne(num) {
     return num + 1
 }
 
 
-addTwo(5) //error declaration of function with variable which is called hoisting
-const addTwo = function(num){ //in js addTwo this is called expression can hold function, JSON value, any value
+//type2: const "addTwo" also called expression as the js var can hold anything like fnc, json value
+addTwo(5) //fnc is called before fnc declaration fnc shows error (hoisting)
+const addTwo = function(num){ //in js addTwo this is called expression can hold anything like function, JSON value, any value
     return num + 2
 }
+
+
+
+//hoisting:it defines how fnc is stored, their excetution context, var treatment and how final tree is creted where fncs are stored 
+// error declaration of function with variable which is called hoisting
