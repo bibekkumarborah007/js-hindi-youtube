@@ -46,16 +46,16 @@ JsUser.email = "bkb@gmail.com"
 // Object.freeze(JsUser)
 JsUser.email = "bkb@hotmail.com"
 //printing after freeze but no change due to Object.freeze()
-// console.log(JsUser);
+// console.log(JsUser);//here it shows symbol key*******************************
 
 
 //adding functions in objects just like variables
 
 JsUser.greeting = function(){
-    // console.log("Hello JsUser");
+    console.log("Hello JsUser");
 }
 JsUser.greetingTwo = function(){
-    // console.log(`Hello JsUser, ${this.name}`);
+    console.log(`Hello JsUser, ${this.name}`);//use this. when we need reference of the same object
 }
 // console.log(JsUser.greeting());
 // console.log(JsUser.greetingTwo());

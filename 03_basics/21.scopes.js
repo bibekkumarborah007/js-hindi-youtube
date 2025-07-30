@@ -20,7 +20,7 @@ if (true){
 
 
 /*
-interview question: browser and IDE node envirobnment has different gloabl scopes 
+interview question: browser and IDE node environment has different global scopes 
 */
 
 
@@ -65,12 +65,13 @@ function addOne(num) {
 
 
 //type2: const "addTwo" also called expression as the js var can hold anything like fnc, json value
-addTwo(5) //fnc is called before fnc declaration fnc shows error (hoisting)
+// addTwo(5) //fnc is called before fnc declaration fnc shows error (hoisting)
+
 const addTwo = function(num){ //in js addTwo this is called expression can hold anything like function, JSON value, any value
     return num + 2
 }
 
 
 
-//hoisting:it defines how fnc is stored, their excetution context, var treatment and how final tree is creted where fncs are stored 
+//hoisting:it defines how fnc is stored, their excecution context, var treatment and how final tree is created where fncs are stored 
 // error declaration of function with variable which is called hoisting

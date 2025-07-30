@@ -12,17 +12,21 @@ const course = {
 course.courseInstructor
 
 //anotherway to use for large no. of times to access 
+
 // syntax: const {object's key} = object name 
 // c.log(object's key)
-//also: const {object's key : newName} = object name 
+
+//also: const {object's key : newName} = object name
+
 const {courseInstructor: instructor} = course //:abcd is what we called de structure of object
 // console.log(courseInstructor);
 console.log(instructor); //hitesh
 
 
-//eg of react strucure of {company} as destructure
-// //generally used in React
-// const navbar = ({company}) => {
+//eg of react structure of {company} as destructure
+//generally used in React
+
+// const navbar = ({company}) => { //props.company
 
 // }
 // navbar(company = "hitesh")

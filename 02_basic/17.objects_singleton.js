@@ -1,10 +1,10 @@
-//15. objects singleton or thorugh objects
+//15. objects singleton or through objects
 
 // const tinderUser = new Object() //singleton object
 // console.log(tinderUser); //{}
 
 
-const tinderUser = {} //same but not singleton objkect
+const tinderUser = {} //same but not singleton object
 
 //to add new keys or ids
 tinderUser.id = "123abc"
@@ -28,9 +28,9 @@ const regularUser = {
 }
 
 // console.log(regularUser);
-// console.log(regularUser.fullname);
-// console.log(regularUser.fullname.userfullname);
-// console.log(regularUser.fullname.userfullname.firstname); //? use instead of if else in APIs if that object doesn't exist
+// console.log(regularUser.fullname);//{ userfullname: { firstname: 'bibek', lastname: 'borah' } }
+// console.log(regularUser.fullname.userfullname);//{ firstname: 'bibek', lastname: 'borah' }
+// console.log(regularUser.fullname.userfullname.firstname); //bibek, ? use instead of if else in APIs if that object doesn't exist
  
 /*
 combing of objcets
@@ -75,7 +75,7 @@ const users = [
         email: "b@gmail.com"
     },
     {
-        id: 1,
+        id: 2,
         email: "c@gmail.com"
     },
     {
@@ -91,11 +91,11 @@ const users = [
 
  //  console.log(tinderUser); //{ id: '123abc', name: 'Sammy', isLoggedIn: false }
  
-//  console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ]
+//  console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] stores in array helps in db
 //  console.log(Object.values(tinderUser)); //[ '123abc', 'Sammy', false ]
-//  console.log(Object.entries(tinderUser)); [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+//  console.log(Object.entries(tinderUser)); [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ] //each entry as array
 
-//  console.log(tinderUser.hasOwnProperty("isLoggedIn"));//true //sometimes loop thorugh objects may not exist and chances of crash to check if it is there or nor in terms of boolean
+//  console.log(tinderUser.hasOwnProperty("isLoggedIn"));//true //sometimes loop through objects to get value and it may not exist and chances of crash. To check if it is there exist or not returns in terms of boolean
 
 
  //for more to go broweser mdn docs inspect console: obj1 -> down arrow -> prototypes

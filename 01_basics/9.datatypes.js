@@ -14,7 +14,7 @@ let userEmail;
 const id = Symbol("123")
 const anotherId = Symbol("123")
 
-console.log(id === anotherId);
+console.log(id === anotherId);//fasle
 
 const bigNumber = 12345678910111213141516n
 
@@ -35,7 +35,7 @@ const bigNumber = 12345678910111213141516n
 
 
 
-//10.Stack and Heap Memoery in JS
+//10.Stack and Heap Memory in JS
 
 //Stack (Primitive) => copy value, 
 // Heap (Non-Primitive) => reference value, when changed original value also change

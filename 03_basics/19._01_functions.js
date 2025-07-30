@@ -10,23 +10,23 @@ function sayMyName() {
 
 // sayMyName() //sayMyname -> ref sayMyName() -> execution
 
-// function addTwoNumbers(num1, num2) { //i.p -> aruguments
+// function addTwoNumbers(num1, num2) { //i.p -> arguments
 //     console.log(num1 + num2); //only prints
 // }
 
 function addTwoNumbers(num1, num2) {
     // let numbers = num1 + num2
-    // return numbers //by default after return function it doesnt excute anything after
+    // return numbers //by default after return function it doesn't excute anything after
     return num1 + num2
 }
 // addTwoNumbers(3,4) //arguments
 const result = addTwoNumbers(3,4) //arguments
 // console.log("result: ",result);
 
-function loginInMessage(username = "sam") { // = "sam" means when empty use sam and overwrite when argument is entered
+function loginInMessage(username = "sam") { // = "sam" is default value means when fnc is called without arguments then sam display as default value
     if (!username) { //!username -> username === undefined written in react
         console.log("Please enter a username");
-        return
+        return //used return so that when undefined satisfies after console the next return value is not excuted
     }
     return`${username} just logged in`
 }
@@ -42,12 +42,27 @@ function loginInMessage(username = "sam") { // = "sam" means when empty use sam 
 /*
 //how multiple value is passed in function using rest ... operator 
 */
-function calculateCarPrice(val1, val2, ...num1) { //... rest operator in function where it khula values into bundles converts the multiple aarguments into array for futher looping
+
+function cal(num1){
+    return num1
+}
+// console.log(cal(100,200,300));//100 only
+
+function cal2(...num1){//... rest operator
+    return num1
+}
+// console.log(cal2(100,200,300));//display all in array using rest operator
+
+
+function calculateCarPrice(val1, val2, ...num1) { //... rest operator in function where it khula values into bundles converts the multiple arguments into array for futher looping
     return num1
 }
 
-// console.log(calculateCarPrice(200, 400, 500, 2000)) //val1=200, val2=400, ...=500,200 into array
+// console.log(calculateCarPrice(200, 400, 500, 2000)) //val1=200, val2=400, // ...=500,2000 into array
 
+
+
+//*********** taking obj as fnc input, typechecking is important else undefined
 const user = {
     username: "bibek",
     price: 199 //change in keys can does errors typescript checks all
@@ -76,5 +91,5 @@ const myNewArray = [200, 400, 100, 600]
 function returnSecondValue(getArray) {
     return getArray[1]
 }
-console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+// console.log(returnSecondValue(myNewArray));//400
+// console.log(returnSecondValue([200, 400, 500, 1000]));//400

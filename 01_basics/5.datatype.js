@@ -12,7 +12,7 @@ let isLoggedIn = true
 let temp = null;
 let state;
 
-//code readability musty high use pritter
+//code readability must high use pritter
 //documentaion use mdndocs or ecma
 
 //num

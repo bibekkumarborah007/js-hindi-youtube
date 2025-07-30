@@ -9,10 +9,8 @@ const dc_heroes = ["superman", "flash", "batman"]
 // marvel_heroes.push(dc_heroes)//['thor','ironman','spiderman',[ 'superman', 'flash', 'batman' ]]
 // console.log(marvel_heroes[3][1]); //flash
 
-// marvel_heroes.concat(dc_heroes) //store in var
-// console.log(marvel_heroes);
-
 //-------concat()-------------
+// marvel_heroes.concat(dc_heroes) //store in var
 const allHeroes = marvel_heroes.concat(dc_heroes) //shows nested array only due to not stroing in new array
 // console.log(allHeroes); //[ 'thor', 'ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
