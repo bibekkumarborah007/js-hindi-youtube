@@ -3,9 +3,9 @@
 const userEmail = [] //"bkb@gmail.com"       //""  ->else   ,[] -> if
 
 if(userEmail){
-    // console.log("Got user email");
+    console.log("Got user email");
 }else{
-    // console.log("Don't have user email");
+    console.log("Don't have user email");
 }
 
 //***************************truthy and falsy: to determine when there is no value in variable for condition to run
@@ -21,7 +21,7 @@ if(userEmail){
 
 const emptyObj = {}
 if (Object.keys(emptyObj).length === 0) {
-    console.log("Object is empty");
+    // console.log("Object is empty");
     
 }
 
@@ -46,4 +46,4 @@ val1 = null ?? 10 ?? 20
 // condition ? true : false
 
 const iceTeaPrice = 100
-iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+// iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
