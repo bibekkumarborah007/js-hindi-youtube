@@ -88,7 +88,7 @@ form.addEventListener('submit', (e) => {
 //assignment: show the what range you fall for
 ```
 
-##project 3: Digital Clock
+## project 3: Digital Clock
 
 ```javascript
 
