@@ -2,7 +2,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // const values = coding.forEach((i)=>{
 //     console.log(i);
-//     // return i// for each doesnt return anything
+//     // return i     //for each doesn't return anything
 // })
 
 // console.log(values);//undefined
@@ -18,7 +18,7 @@ let newNums = myNums.filter( (num) =>{
     return num > 4
 })
 
-// console.log(newNums);
+// console.log(newNums);//[ 5, 6, 7, 8, 9, 10 ]
 
 
 const newNum2 = []

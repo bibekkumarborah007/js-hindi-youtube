@@ -21,10 +21,10 @@
 
 
 
-// ***************** do while loop excutes the loop once then checks conditions
+// ***************** do while loop excutes the loop atleast once then checks conditions
 
 let score = 11
 do {
     console.log(`Score is ${score}`);
     score++
-} while (score <= 10);
+} while (score <= 10);//Score is 11

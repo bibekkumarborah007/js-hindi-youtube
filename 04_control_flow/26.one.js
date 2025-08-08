@@ -52,5 +52,3 @@ if (userLoggedIn && debitCard && 2==2) {
 if(loggedInFromGoogle || loggedInFromEmail){
     // console.log("User logged in");
 }
-
-
