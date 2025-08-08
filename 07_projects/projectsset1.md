@@ -87,3 +87,21 @@ form.addEventListener('submit', (e) => {
 
 //assignment: show the what range you fall for
 ```
+
+##project 3: Digital Clock
+
+```javascript
+
+const clock = document.getElementById('clock');
+// const newClock = document.querySelector('#click')
+
+//digital clock
+
+//need continous secodns changes
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+```
