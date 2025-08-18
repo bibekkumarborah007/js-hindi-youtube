@@ -1,0 +1,41 @@
+// 2 projects with Async JS
+//setTimeOut((handler)=>{},2000)
+//setInterval()
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(() => {
+    //     console.log("bibek", Date.now());
+    // }, 2000);
+
+    //-----start button------
+    const sayDate = (str) =>{
+        console.log(str, Date.now());
+    }
+    // const intervalID = setInterval(sayDate, 2000, "hi");
+    
+    document.querySelector('#start').addEventListener('click',()=>{
+        const start = setInterval(sayDate,2000,"hello")
+        console.log("Started");
+    })
+
+    //-----stop button------
+    // clearInterval(start)
+    const stopBtn = document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(start)
+        console.log("Stopped");        
+    })
+
+</script>
+</html>

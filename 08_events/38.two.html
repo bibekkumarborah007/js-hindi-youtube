@@ -1,0 +1,56 @@
+// 2 projects with Async JS
+//timeout function: settimer practical
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //--------Q1
+    // setTimeout(function(){
+    //     console.log("Bibek");
+    // }, 2000)
+
+
+
+
+    //--------Q2 ---- handler as refrence
+    // const saybkb = function(){
+        // console.log("bibek");
+    // }
+    // setTimeout(saybkb, 2000) //use reference as handler only
+    
+
+
+
+
+    //---------Q3 change <h2> chai aur code to best js course //eg. in website after few sec popup
+    const saybkb = function(){
+        console.log("bibek");
+    }
+    setTimeout(saybkb, 2000)
+
+    // document.querySelector('h1').innerHTML = 'best js series' //not this way
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = 'best JS course'
+    }
+    const changeMe = setTimeout(changeText, 2000)
+
+    // clearTimeout(changeMe)// this requred the reference to determine which setTimeout to clear or stop     but    using both setTimeout and clearTimeout alone one to set and one t clear has no sense so for clearSet we need addEventListerner
+    
+    document.querySelector('#stop').addEventListener('click', () =>{
+        clearTimeout(changeMe)
+        console.log("Stopped");
+    })
+
+
+
+</script>
+</html>

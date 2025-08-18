@@ -202,3 +202,42 @@ function newGame() {
 }
 
 ```
+
+## project 6: muilti color
+```javascript
+//generate a random color
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+// console.log(Math.floor(Math.random() * 16));
+// console.log(randomColor());
+
+//------on click change bgcolor on interval
+let intervalId;
+const startChangingColor = function () {
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+  if (!intervalId) {
+    //intervalID === null efficient code
+    intervalId = setInterval(changeBgColor, 1000);
+  }
+};
+
+//-------on click stop change bgcolor
+const stopChangingColor = function () {
+  clearInterval(intervalId);
+  intervalId = null; //clear and dereference intervalID
+};
+
+//---EventListerner click
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+```
