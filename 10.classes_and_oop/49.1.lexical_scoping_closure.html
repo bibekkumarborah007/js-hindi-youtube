@@ -1,0 +1,48 @@
+//Closures: A closure gives you access to an outer fnc scope from an inner function
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    
+</body>
+<script>
+    // function init(){
+    //     var name = "Mozilla"
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     displayName()
+    // }
+    // init()
+/*
+    function outer(){
+        let username = "hitesh"
+    }
+    console.log(username);//Uncaught ReferenceError: username is not defined
+*/
+     function outer(){
+        let username = "hitesh"
+        // console.log("OUTER", secret);//outer from inner no "leave"
+        
+        function inner(username) {
+            let secret = "my123"//beothers don't sjare
+            console.log(username);
+        }
+        function innerTwo() {
+            console.log("innerTwo", username);
+            
+        }
+        inner()
+        innerTwo()
+    }
+    outer()
+    console.log("TOO OUTER", username);
+    
+
+</script>
+</html>

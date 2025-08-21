@@ -2,28 +2,32 @@
 
 // }//object literal
 
-const user = {
-    username: "bibek",
-    loginCount : 8,
-    signedIn: true,
+// const user = {
+//     username: "bibek",
+//     loginCount : 8,
+//     signedIn: true,
 
-    getUserDetails: function(){
-        // console.log("Got user details from database");
-        // console.log(`Username: ${this.username}`);//bibek
-        console.log(this);//all current context
-        
-        
-    }
-}
+//     getUserDetails: function(){
+//         // console.log("Got user details from database");
+//         // console.log(`Username: ${this.username}`);//bibek
+//         console.log(this);//all current context
+//     }
+// }
 
-console.log(user.username);//bibek
+// console.log(user.username);//bibek
 // console.log(user.getUserDetails());
 
 //----remember: using c.log(this) outside object in node env gives {} object       but in browser due to web apis c.log(this) gives window object (which is global object)
-console.log(this);//{} empty object in node env
+// console.log(this);//{}     empty object in node env
+
+
+
 
 // const promiseOne = new Promise()
 // const date = new Date()
+
+
+
 
 //---Construction fucntion: always give new instances to play with context with old data
 
@@ -34,10 +38,10 @@ function User(username, loginCount, isLoggedIn) { //3 values and assign
 
     this.greeting = function () {
         console.log(`Welcome ${this.username}`);
-        
+
     }
 
-    return this //object this passed on: doesnt c.log without return this when an instance is c.log without new keyword with new keyword without return this possible
+    return this //object this passed on: doesn't c.log without return this when an instance is c.log without new keyword with new keyword without return this possible
 }
 
 // //-----problem is wihout new keyword to determie as constrction fnc also next instance overwrites the old function
@@ -52,7 +56,7 @@ function User(username, loginCount, isLoggedIn) { //3 values and assign
 
 const userOne = new User("hitesh", 12, true)
 console.log(userOne);
-const userTwo = new User("ChaiAurCode", 11, false)//value overwrites userOne
+const userTwo = new User("ChaiAurCode", 11, false)//value overwrites userOne if new keyword is avoided
 console.log(userOne.constructor);
 // console.log(userTwo);
 
@@ -68,13 +72,16 @@ console.log(userOne.constructor);
 // 3. This keyword injected in object: This keyword injected in the packed written arugments 
 // 4. Display
 
-//read Instance of:
-function Car(make, model, year) {
-    this.make = make
-    this.model = model
-    this.year = year
-}
-const auto = new Car("Rolls Royce", "Cullinan", 2025)
-console.log(auto instanceof Car);// true
 
-console.log(auto instanceof Object);//true
+
+
+//read Instance of:
+// function Car(make, model, year) {
+//     this.make = make
+//     this.model = model
+//     this.year = year
+// }
+// const auto = new Car("Rolls Royce", "Cullinan", 2025)
+// console.log(auto instanceof Car);// true
+
+// console.log(auto instanceof Object);//true
