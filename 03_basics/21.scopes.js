@@ -67,7 +67,7 @@ function addOne(num) {
 //type2: const "addTwo" also called expression as the js var can hold anything like fnc, json value
 // addTwo(5) //fnc is called before fnc declaration fnc shows error (hoisting)
 
-const addTwo = function(num){ //in js addTwo this is called expression can hold anything like function, JSON value, any value
+const addTwo = function(num){ //in js const addTwo = fnc() this is called expression can hold anything like function, JSON value, any value
     return num + 2
 }
 

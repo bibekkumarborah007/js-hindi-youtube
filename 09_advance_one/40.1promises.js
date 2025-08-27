@@ -1,3 +1,5 @@
+//Promises: event completion or failure. Created then consumed
+
 // fetch('https://something.com').then().catch().finally()
 
 //-----------promise 1
@@ -63,7 +65,7 @@
 //     return user.username //return is used in order to get key's values and futher chained with .then() to console.log()
 
 // })
-// .then((username)=>{//parater can of any variable
+// .then((username)=>{     //parater can of any variable
 //     console.log(username);
 // })
 // .catch((error)=>{

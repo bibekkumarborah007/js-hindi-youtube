@@ -227,6 +227,7 @@ window.addEventListener('keydown', (e) => {
 ```
 
 ## project 6: unlimited color
+
 ```javascript
 //generate a random color
 const randomColor = function () {

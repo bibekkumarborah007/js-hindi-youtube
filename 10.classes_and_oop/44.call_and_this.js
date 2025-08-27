@@ -8,7 +8,7 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password) {
-    SetUsername.call(this, username)
+    SetUsername.call(this, username) //.call hold ref
 
     // this.username = username
     this.email = email

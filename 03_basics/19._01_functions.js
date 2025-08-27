@@ -11,7 +11,7 @@ function sayMyName() {
 // sayMyName() //sayMyname -> ref sayMyName() -> execution
 
 // function addTwoNumbers(num1, num2) { //i.p -> arguments
-//     console.log(num1 + num2); //only prints
+//     console.log(num1 + num2); //only prints but doesn't trturn anything
 // }
 
 function addTwoNumbers(num1, num2) {
@@ -54,7 +54,7 @@ function cal2(...num1){//... rest operator
 // console.log(cal2(100,200,300));//display all in array using rest operator
 
 
-function calculateCarPrice(val1, val2, ...num1) { //... rest operator in function where it khula values into bundles converts the multiple arguments into array for futher looping
+function calculateCarPrice(val1, val2, ...num1) { //... rest operator in function where it khula values into bundles converts the multiple arguments into array for further looping
     return num1
 }
 

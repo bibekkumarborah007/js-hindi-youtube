@@ -30,3 +30,4 @@ class Teacher extends User{
 const iphone = new Teacher("iphone", "i@phone.com")
 iphone.logMe()
 // iphone.createId()//no access due to static
+// console.log(iphone.createId());

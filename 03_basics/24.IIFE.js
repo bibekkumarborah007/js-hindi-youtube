@@ -13,7 +13,7 @@
 (function chai(){//NOTE: This is called name IIFE
     console.log(`DB CONNECTED`);
     
-})();
+})(); //<===== ; is required for more than IIFE functions
 
 //()() -------------->start () where we write the fnc and next () for execution of the fnc
 

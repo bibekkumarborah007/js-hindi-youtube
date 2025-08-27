@@ -15,8 +15,9 @@
             this.server = "https://localhost:300"
 
             //requirement when page loads a obj creates
-            document.querySelector('button')
-            .addEventListener('click', this.handleClick.bind(this)) // use bind without react
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleClick.bind(this)) // use bind without react
         }
         handleClick(){
             console.log("button clicked");

@@ -10,10 +10,11 @@ if(userEmail){
 
 //***************************truthy and falsy: to determine when there is no value in variable for condition to run
 
-//falsy value: false, 0, 
-// -0, BigInt, )navigator, "", null, undefined, NaN ----------> except these all the truthy values or if(cnd) works
+//falsy value: 
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN ----------> except these all the truthy values or if(cnd) works
 
-//truthy values: "0" -> Zero Inside String literralyb anything inside quotes even a space
+//truthy values: 
+// "0" -> Zero Inside String literral anything inside quotes even a space
 //  'false', " ", [], {}, function(){}, true
 
 // if(userEmail.length === 0){
@@ -21,7 +22,7 @@ if(userEmail){
 // }
 
 const emptyObj = {}
-if (Object.keys(emptyObj).length === 0) {
+if (Object.keys(emptyObj).length === 0) {//Object.keys() gives array
     // console.log("Object is empty");
     
 }

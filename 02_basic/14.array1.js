@@ -40,7 +40,7 @@ const newArr = myArr.join()
 //replace.they return a section of array``
 
 
-//nomral array
+//normal array
 console.log("A: Array", myArr); //A [ 0, 1, 2, 3, 4, 5 ]
 
 

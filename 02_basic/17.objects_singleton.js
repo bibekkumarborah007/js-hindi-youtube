@@ -33,7 +33,7 @@ const regularUser = {
 // console.log(regularUser.fullname.userfullname.firstname); //bibek, ? use instead of if else in APIs if that object doesn't exist
  
 /*
-combing of objcets
+combining of objcets
 */
 
 const obj1 = {

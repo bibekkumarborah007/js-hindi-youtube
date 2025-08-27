@@ -33,4 +33,4 @@ const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 console.log(priceToPay);//9997
 
 // const total = shoppingCart.map((i)=> i.price)
-// console.log(total);
+// console.log(total);//map in obj returns array
