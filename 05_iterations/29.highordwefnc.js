@@ -19,19 +19,19 @@ const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "France")
-map.set('Fr', "France")//only displays unique values and remain in same order
+map.set('Fr', "France")//only displays unique values and remain in same order of insertion
 
 // console.log(map);
 
 // for (const i of map) {
 //     console.log(i);
-        
-// }//shows map in array values
+
+// }//forof loop: shows map in array values
 
 //for individual values destructure of array
 // for (const [key, value] of map) {
 //     console.log(key, ":-", value);
-        
+
 // }
 
 
@@ -42,7 +42,7 @@ map.set('Fr', "France")//only displays unique values and remain in same order
 
 // for(const iterator of myObject){
 //     console.log(iterator);//myObject is not iterable
-    
+
 // }
 
 
@@ -58,7 +58,7 @@ const myObj = {
     swift: "swift by apple",
 }
 
-for(const key in myObj){
+for (const key in myObj) {
     // console.log(key);//js,cpp,rb,swift
     // console.log(myObj[key]);//javascript,c++,ruby,swift by apple
     // console.log(`${key} shortcut is for ${myObj[key]}`);
@@ -77,10 +77,10 @@ for(const key in myObj){
 // map.set('IN', "India")
 // map.set('USA', "United States of America")
 // map.set('Fr', "France")
-// map.set('Fr', "France")//only displays unique values and remain in same order
+// map.set('Fr', "France")//only displays unique values and remain in same order of insertion
 
 // for (const key in map) {
-//         console.log(key)//maps are non iterable
+//         console.log(key)//maps are non iterable like objects
 // }
 
 
@@ -90,7 +90,7 @@ for(const key in myObj){
 
 // ***********************for each loop*******************
 
-const coding = ["js","ruby", "java", "python", "cpp"]
+const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
 //****** what is callback fnc in in foreach loop? 
@@ -105,7 +105,7 @@ const coding = ["js","ruby", "java", "python", "cpp"]
 // //******** arrow fnc
 // coding.forEach(i =>{
 //     console.log(i);
-    
+
 // })
 
 
@@ -142,6 +142,6 @@ const myCoding = [
     }
 ]//have to learn as everything that comes in array comes with value of object only in db
 
-myCoding.forEach((i)=>{
+myCoding.forEach((i) => {
     console.log(i.languageName);
 })

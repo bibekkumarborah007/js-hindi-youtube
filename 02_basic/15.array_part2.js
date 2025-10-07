@@ -19,7 +19,7 @@ const allHeroes = marvel_heroes.concat(dc_heroes) //shows nested array only due 
 const all_new_heroes = [...marvel_heroes, ...dc_heroes]
 // console.log(all_new_heroes);//[ 'thor', 'ironman', 'spiderman', 'superman', 'flash', 'batman' ]
 
-const another_array = [1, 2,3 , [4, 5, 6], 7, [6, 7, [4, 5]]]
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 const real_another_array = another_array.flat(Infinity) //flat(depth:1,2,3,infinity)
 // console.log(real_another_array);//[1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]
 
@@ -32,7 +32,7 @@ const real_another_array = another_array.flat(Infinity) //flat(depth:1,2,3,infin
 //data scrapting in array
 console.log(Array.isArray("hitesh"))//false
 console.log(Array.from("hitesh")) //[ 'h', 'i', 't', 'e', 's', 'h' ]
-console.log(Array.from({name:"hitesh"}))//interesting we have to mentioned key or value to convert else empty array
+console.log(Array.from({ name: "hitesh" }))//interesting we have to mentioned key or value to convert else empty array
 
 let score1 = 100
 let score2 = 200

@@ -1,6 +1,4 @@
-const myTotal = myNums.reduce(function (accumulator,  currentvalue) {
-//     console.log(`accumulator: ${accumulator} and currentvalue: ${currentvalue}`);
-//     return accumulator + currentvalue
-// },0);
+for (const i of map) {
+    console.log(i);
 
-// console.log(myTotal);
+}//shows map in array values

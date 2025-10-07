@@ -51,10 +51,10 @@ JsUser.email = "bkb@hotmail.com"
 
 //adding functions in objects just like variables
 
-JsUser.greeting = function(){
+JsUser.greeting = function () {
     console.log("Hello JsUser");
 }
-JsUser.greetingTwo = function(){
+JsUser.greetingTwo = function () {
     console.log(`Hello JsUser, ${this.name}`);//use this. when we need reference of the same object
 }
 // console.log(JsUser.greeting());
