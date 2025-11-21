@@ -108,7 +108,7 @@
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')//we fetch JSON
 //         // console.log(response); // not required
-        
+
 //         const data = await response.json()//data comes in string need to fetch in json format use await also
 //         console.log(data);
 //     } catch (error) {
@@ -121,10 +121,10 @@
 //--------------------------prev same in .then().catch()
 
 fetch('https://jsonplaceholder.typicode.com/users')
-.then((response)=>{
-    return response.json()
-})
-.then((data)=>{
-    console.log(data);//return response must be handled
-})
-.catch((error) => console.log(error))
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);//return response must be handled
+    })
+    .catch((error) => console.log(error))

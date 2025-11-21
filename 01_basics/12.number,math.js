@@ -42,16 +42,17 @@ const hundreds = 1000000
 // console.log(Math.max(2,5,1,5,7,1,10))//10
 
 console.log(Math.random()); //gives value between 0 and 1 in decimal used in dice game eg. 0.1234235346456
-console.log((Math.random()*10)); //(*10) to ensure value greater than 1 to 9 but also include 0 with decimal
-console.log((Math.random()*10) + 1); //() + 1 to ensure value always greater than 0 and between 1 to 9
-console.log(Math.floor(Math.random()*10) + 1); //Math.floor to obtain single digit value
+console.log((Math.random() * 10)); //(*10) to ensure value greater than 1 to 9 but also include 0 with decimal
+console.log((Math.random() * 10) + 1); //() + 1 to ensure value always greater than 0 and between 1 to 9
+console.log(Math.floor(Math.random() * 10) + 1); //Math.floor to obtain single digit value
 
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max - min + 1)) + min); 
-//max and min range formula, 
-// + 1 to avoid decimal and 
+console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+//max and min range formula,
+// + 1 to avoid decimal and
 // +min to get above 10 value
 
 

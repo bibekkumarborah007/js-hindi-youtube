@@ -13,7 +13,7 @@ const gameName = new String("hitesh-hc-com")//object way and copy and paste in w
 // console.log(gameName.charAt(2)); //position
 // console.log(gameName.indexOf('t'));//2
 
-const newString = gameName.substring(0,4) //displays start index and before end index
+const newString = gameName.substring(0, 4) //displays start index and before end index
 // console.log(newString); //hite
 
 const anotherString = gameName.slice(-12, 4) //same to substring but it can allow negavtive -ve value as reverse

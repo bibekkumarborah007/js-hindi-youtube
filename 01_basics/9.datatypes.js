@@ -1,6 +1,6 @@
 //9 and 10
 
-//1. Primitives call by copy
+//1. Primitives call by value
 
 //7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -24,7 +24,7 @@ const bigNumber = 12345678910111213141516n
 // Types:
 //Array, Objects, Functions
 
-//js is dynamically typed lanuage we dont have to define the type of datatype the lanuage itself undertsnad the type
+//js is dynamically typed lanuage we dont have to define the type of datatype the language itself understand the type
 
 
 
@@ -40,16 +40,16 @@ const bigNumber = 12345678910111213141516n
 //Stack (Primitive) => copy value, 
 // Heap (Non-Primitive) => reference value, when changed original value also change
 
-const heros =["shaktiman", "naagraj", "doga"]
+const heros = ["shaktiman", "naagraj", "doga"]
 const myObj = {
     name: "bibek",
     age: 23
 }
 console.log(typeof myObj); //object
 
-const myFunction = function() {
+const myFunction = function () {
     console.log("Hello World");
-    
+
 }
 console.log(typeof myFunction); //object function
 
@@ -59,7 +59,7 @@ console.log(typeof scoreValue);
 
 
 
-let myYTN ="bkb"
+let myYTN = "bkb"
 let anotherN = myYTN
 anotherN = "bibek"
 
